@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MoodFlix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="overlay">
+            <h1>MoodFlix 🎬</h1>
+            <p>Movie recommendations On Your Mood 😉</p>
+            <button class="start-btn" onclick="enterApp()">Enter</button>
+        </div>
+    </div>
+
+    <!-- MOOD INPUT SECTION -->
+    <div id="mood-section" class="hidden mood-bg">
+        <div class="overlay">
+            <h2>How Are You Feeling Today?</h2>
+            <input type="text" id="moodInput" placeholder="Type your mood...">
+            <br><br>
+            <button class="start-btn" onclick="discoverMood()">Discover</button>
+        </div>
+    </div>
+
+    <!-- MOVIE SECTION -->
+    <div id="movie-section" class="hidden">
+        <button class="back-btn" onclick="goBack()">⬅ Back</button>
+        <div id="movies-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
