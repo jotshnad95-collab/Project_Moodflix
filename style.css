@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+/* SAME BACKGROUND FOR HERO + MOOD PAGE */
+
+.hero, .mood-bg {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba") 
+                no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.75);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.overlay h1 {
+    font-size: 60px;
+    color: #e50914;
+}
+
+.overlay h2 {
+    font-size: 35px;
+}
+
+.start-btn {
+    padding: 15px 40px;
+    font-size: 18px;
+    background: #e50914;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.start-btn:hover {
+    background: #ff1a1a;
+}
+
+input {
+    padding: 12px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* MOVIE SECTION */
+
+#movie-section {
+    padding: 30px;
+    text-align: center;
+}
+
+.movie-card {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.watch-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #e50914;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    background: gray;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
